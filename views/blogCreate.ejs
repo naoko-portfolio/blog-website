@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating ablog page</title>
+    <%- include("./head"); %>
+</head>
+<body>
+    <%- include("./header"); %>
+    <main>
+        <div class="blog-create">
+            <h1>Write an article</h1>
+            <div>
+                <form action="/blog/create" method="POST">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" required>
+                        <label for="summary">Summaey</label>
+                        <input type="text" name="summary" required>
+                        <label for="image">Image</label>
+                        <input type="text" name="image" placeholder="/img1.jpg" required>
+                        <label for="textBody">Text Body</label>
+                        <textarea name="textBody" rows="15" required></textarea>
+                        <br/>
+                        <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <%- include("./footer"); %>
+</body>
+</html>

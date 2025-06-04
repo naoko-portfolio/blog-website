@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update a blog page</title>
+    <%- include("./head"); %>
+</head>
+<body>
+    <%- include("./header"); %>
+            <main>
+                <form action="/blog/update/<%= singleBlog._id %>" method="POST">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" value="<%=singleBlog.title %>">
+                        <label for="summary">Summary</label>
+                        <input type="text" name="summary" value="<%=singleBlog.summary %>">
+                        <label for="image">Image</label>
+                        <input type="text" name="image" value="<%=singleBlog.image %>">
+                        <label for="textBody">Text Body</label>
+                        <textarea name="textBody" rows="15"><%=singleBlog.textBody %></textarea>
+                        <br/>
+                        <button type="submit">Submit for the edite</button>
+                </form>
+            </main>
+    <%- include("./footer"); %>
+</body>
+</html>

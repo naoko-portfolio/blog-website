@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= singleBlog.title %></title>
+    <%- include("./head"); %>
+</head>
+<body>
+    <%- include("./header"); %>
+    <main>
+        <div class="blog-read">
+            <h1><%= singleBlog.title %></h1>
+             <img src="/images/<%= singleBlog.image.replace(/^\/+/, '') %>" alt="blog-image" />
+
+            <p><%= singleBlog.textBody %></p>
+        </div>
+        <div class="bottom">
+            <% if(typeof session !== 'undefined'){ %>
+                <a href="/blog/update/<%= singleBlog._id %>" class="update-button">Update</a>
+                <a href="/blog/delete/<%= singleBlog._id %>" class="delete-button">Delete</a>
+             <% } %>
+        </div>
+    </main>
+    <%- include("./footer"); %>
+</body>
+</html>

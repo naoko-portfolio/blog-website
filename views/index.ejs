@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Advanced Blog</title>
+    <%- include("./head"); %>
+</head>
+<body>
+     <%- include("./header"); %>
+    <main>
+ <div class="grid-container">
+    <% allBlogs.forEach((blog) =>{ %>
+        <div class="card">
+            <a href="blog/<%= blog._id %>">
+                <img src="/images/<%= blog.image.replace(/^\/+/, '') %>" alt="blog-image" />
+
+                <div class="texts-area">
+                    <h2><%= blog.title %></h2>
+                    <p><%= blog.summary %></p>
+                </div>
+            </a>
+        </div>
+        <% }) %>
+    </div>
+    <div class="bottom">
+    <% if(session !==undefined){ %>
+        <a href="/blog/create" class="create-button">Write an article</a>
+        <% } %>
+         <% if(session ===undefined){ %>
+        <a href="/user/login" class="login-button">Login</a>
+        <a href="/user/create" class="user-create-button">Register</a>
+        <% } %>
+    </div>
+
+    </main>
+    <%- include("./footer"); %>
+</body>
+</html>

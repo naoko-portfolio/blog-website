@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog page</title>
+</head>
+<body>
+    <h1>Blog page</h1>
+    
+    <form action="/blog/create" method="POST">
+        Title: <input type="text" name="title">
+        <br/>
+        Summary: <input type="text" name="summary">
+        <br/>
+        Image: <input type="text" name="image" placeholder="/imgl.jpg">
+        <br/>
+        Body:<textarea name="textBody" rows="15"></textarea>
+        <br/>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
