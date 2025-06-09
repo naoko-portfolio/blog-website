@@ -77,5 +77,5 @@ http://localhost:3000
 
 ## Author
 
-Created by Naoko Marin
+Created by Naoko Marin.
 This project is part of my web development portfolio.
