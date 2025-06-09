@@ -44,15 +44,18 @@ node-advanced-blog/
 
 ## Dependencies
 
-- `express` – for building the web server
-- `mongoose` – for interacting with the MongoDB database
-- `ejs` – for rendering dynamic HTML templates
+- `express` – for building the web server  
+- `mongoose` – for interacting with the MongoDB database  
+- `ejs` – for rendering dynamic HTML templates  
 - `dotenv` – for loading environment variables from a `.env` file
 
 → These dependencies will be installed by running:
 
-```bash
+```
 npm install
+
+```
+
 
 ## How to Run Locally
 
