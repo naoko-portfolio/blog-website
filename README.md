@@ -79,3 +79,24 @@ http://localhost:3000
 
 Created by Naoko Marin.
 This project is part of my web development portfolio.
+
+### Challenges I Faced
+
+One of the biggest challenges was understanding how to properly structure the project using Express and EJS.  
+It was difficult at first to organize files into routes, controllers, and views in a clean and logical way.
+
+I also struggled with pushing my project to GitHub, especially when dealing with authentication issues between my two accounts—one for school and one for my portfolio.  
+To solve this, I learned how to configure SSH keys and manage Git settings more carefully.
+
+Writing the README itself was also a new experience. I wanted it to look professional but still reflect my personal learning process.  
+At first, I didn’t know what to write, so I looked at examples from other developers and learned from them. But I wanted mine to be unique, so I added a section about the challenges I faced and how I overcame them.
+
+When I encountered problems, like when the output didn’t appear as expected, I often struggled to figure out what was wrong.  
+As a shortcut, I used ChatGPT to help identify the issues. Sometimes it worked, sometimes it didn’t.
+
+In the end, I realized that while ChatGPT is a helpful tool that saves time, it’s my own understanding that really matters when completing a project.
+
+Through this project, I gained confidence in backend development and learned how to build an app from scratch.  
+It was a valuable experience to start growing both my technical knowledge and my confidence.  
+I struggled most of the time, but I truly enjoyed contributing to this project.  
+This is just the beginning of my journey to build my skills—and I’ll keep creating more.
